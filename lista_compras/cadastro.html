@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro de Produtos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Cadastro de Produtos</h1>
+  <form id="formCadastro">
+    <label>Código Produto: <input type="number" id="codProduto" disabled /></label><br />
+    <label>Nome Produto*: <input type="text" id="nomeProduto" required /></label><br />
+    <label>Unidade*:
+      <select id="unidade" required>
+        <option value="">Selecione</option>
+        <option value="un">Unidade</option>
+        <option value="kg">Quilograma</option>
+        <option value="lt">Litro</option>
+        <option value="mt">Metro</option>
+        <option value="pc">Pacote</option>
+      </select>
+    </label><br />
+    <label>Quantidade*: <input type="number" id="quantidade" required /></label><br />
+    <label>Código de Barra: <input type="text" id="codBarra" maxlength="13" /></label><br />
+    <label>Ativo: <input type="checkbox" id="ativo" checked /></label><br />
+    <button type="submit">Salvar</button>
+  </form>
+
+  
+  <h2>Produtos Cadastrados</h2>
+  <ul id="listaProdutos"></ul>
+
+  <a href="lista.html">Ir para Lista de Compras</a>
+
+  <script src="js/cadastro.js"></script>
+</body>
+</html>
